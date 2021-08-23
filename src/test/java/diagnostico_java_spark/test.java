@@ -12,12 +12,11 @@ import minsait.ttaa.datio.engine.Transformer;
 
 class test {
 
-	static SparkSession spark = SparkSession.builder()
-			.master(SPARK_MODE)
-			.getOrCreate();
+	static SparkSession spark = SparkSession.builder().master(SPARK_MODE).getOrCreate();
 
+	
 	@Test
-	void testFilterPlayerCatValueAorB() {
+	public void testFilterPlayerCatValueAorB() {
 		Transformer engine = new Transformer(spark);
 		Dataset<Row> row = engine.getRetorno();
 		boolean value = false;

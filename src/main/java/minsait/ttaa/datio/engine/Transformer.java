@@ -176,6 +176,6 @@ public class Transformer extends Writer {
 	 * @return value 1 or 0, value get the value of file src/main/resources/params
 	 */
 	private int getValueParam() {
-		return Integer.parseInt(properties.getProperty("value"));
+		return Integer.parseInt(properties.getProperty("value"));	
 	}
 }
